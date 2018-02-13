@@ -1,0 +1,4987 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- This scene contains a single box, shaded with a blue lambertian
+shader, one point light source. -->
+<scene>
+
+<camera name="main" type="perspective">
+  <position>80.0 -100.0 300</position>
+  <viewDir>0.1871    0.6359   -0.7488</viewDir>
+  <focalLength>0.6</focalLength>
+  <imagePlaneWidth>0.5</imagePlaneWidth>
+</camera>
+
+<light type="point">
+  <position>300 400 250</position>
+  <intensity>0.8 0.8 0.8</intensity>
+</light>
+
+<light type="point">
+  <position>10 300 100</position>
+  <intensity>0.8 0.8 0.8</intensity>
+</light>
+
+<shader name="treegreen" type="Lambertian">
+  <diffuse>0.2 0.6 0.2</diffuse>
+</shader>
+
+<shader name="grey" type="Lambertian">
+  <diffuse>0.8 0.5 0.5</diffuse>
+</shader>
+
+<shader name="wall" type="Lambertian">
+  <diffuse>0.7 0.7 0.8</diffuse>
+</shader>
+
+<shape name="leftwall" type="box">
+  <minPt>-10.0 -300.0 -8.0</minPt>
+  <maxPt>-8.0 300.0 600</maxPt>
+  <shader ref="wall"/>
+</shape>
+
+<shape name="backwall" type="box">
+  <minPt>-10.0 -300.0 -8.0</minPt>
+  <maxPt>300.0 300.0 0.0</maxPt>
+  <shader ref="wall"/>
+</shape> 
+  
+<shape name="rightwall" type="box">
+  <minPt>300.0 -300.0 -8.0</minPt>
+  <maxPt>302.0 300.0 600</maxPt>
+  <shader ref="wall"/>
+</shape>
+
+
+<shape name="stree" type="sphere">
+  <center>29.1429 104 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>33.7143 100 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>24.5714 104 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>22.2857 104 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>31.4286 100 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>20 104 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>29.1429 112 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>33.7143 104 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>22.2857 108 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>24.5714 108 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>31.4286 108 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>20 108 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>33.7143 108 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>20 112 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>29.1429 120 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>26.8571 124 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>20 124 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>29.1429 132 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>26.8571 128 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>20 128 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>24.5714 120 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>22.2857 124 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>20 132 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>22.2857 128 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>22.2857 132 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>29.1429 240 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>26.8571 244 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>20 252 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>31.4286 244 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>24.5714 252 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>29.1429 244 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>26.8571 252 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>33.7143 240 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>22.2857 240 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>31.4286 248 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>29.1429 248 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>33.7143 244 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>22.2857 244 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>29.1429 252 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>33.7143 248 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>22.2857 248 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>40 100 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>44.5714 104 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>42.2857 108 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>51.4286 100 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>40 112 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>49.1429 104 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>46.8571 100 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>53.7143 100 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>51.4286 104 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>49.1429 112 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>46.8571 104 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>53.7143 112 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>51.4286 112 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>46.8571 112 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>60 24 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>64.5714 24 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>62.2857 20 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>66.8571 20 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>71.4286 20 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>69.1429 32 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>73.7143 20 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>64.5714 32 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>66.8571 24 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>71.4286 24 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>73.7143 24 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>66.8571 32 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>71.4286 28 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>73.7143 28 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>71.4286 32 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>60 160 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>62.2857 160 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>66.8571 160 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>60 164 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>62.2857 164 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>64.5714 160 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>66.8571 168 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>69.1429 160 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>71.4286 160 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>73.7143 168 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>60 168 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>62.2857 168 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>64.5714 168 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>69.1429 172 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>71.4286 164 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>64.5714 172 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>71.4286 172 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>82.2857 64 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>80 60 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>89.1429 60 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>91.4286 60 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>84.5714 60 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>93.7143 64 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>86.8571 60 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>80 64 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>86.8571 72 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>91.4286 68 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>89.1429 64 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>84.5714 64 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>82.2857 68 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>80 68 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>91.4286 72 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>82.2857 72 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>89.1429 68 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>84.5714 68 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>84.5714 72 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>89.1429 72 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>80 160 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>82.2857 164 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>91.4286 164 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>89.1429 160 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>80 164 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>86.8571 164 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>84.5714 160 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>91.4286 168 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>82.2857 168 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>80 168 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>86.8571 168 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>82.2857 172 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>84.5714 168 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>100 144 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>106.857 148 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>102.286 144 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>104.571 140 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>111.429 140 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>113.714 144 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>100 152 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>109.143 152 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>106.857 152 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>104.571 148 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>111.429 144 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>113.714 148 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>104.571 152 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>111.429 152 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>122.286 204 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>124.571 200 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>126.857 204 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>129.143 204 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>133.714 200 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>131.429 200 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>122.286 208 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>124.571 204 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>126.857 208 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>129.143 208 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>133.714 208 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>131.429 212 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>122.286 212 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>142.286 64 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>140 60 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>146.857 60 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>144.571 60 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>153.714 64 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>151.429 60 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>149.143 60 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>142.286 68 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>140 64 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>146.857 64 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>144.571 68 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>153.714 68 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>151.429 64 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>149.143 72 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>142.286 72 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>146.857 68 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>140 68 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>151.429 68 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>146.857 72 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>151.429 72 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>140 92 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>144.571 84 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>142.286 80 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>144.571 88 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>146.857 88 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>142.286 84 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>149.143 80 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>151.429 88 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>153.714 80 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>146.857 92 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>144.571 92 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>149.143 88 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>153.714 88 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>149.143 92 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>153.714 92 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>180 80 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>193.714 80 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>191.429 80 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>182.286 88 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>189.143 80 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>186.857 84 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>184.571 92 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>180 92 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>193.714 84 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>191.429 84 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>182.286 92 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>186.857 88 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>189.143 84 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>193.714 88 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>191.429 92 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>186.857 92 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>189.143 88 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>193.714 92 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>182.286 240 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>180 244 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>184.571 240 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>193.714 240 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>191.429 244 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>189.143 240 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>182.286 244 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>180 252 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>184.571 244 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>186.857 240 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>193.714 244 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>191.429 248 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>189.143 244 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>182.286 252 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>184.571 248 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>186.857 244 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>193.714 248 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>191.429 252 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>186.857 248 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>182.286 272 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>184.571 260 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>180 272 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>189.143 260 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>193.714 260 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>186.857 260 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>191.429 264 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>184.571 272 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>193.714 264 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>189.143 264 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>186.857 268 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>193.714 268 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>189.143 272 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>200 40 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>202.286 52 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>204.571 40 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>213.714 52 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>206.857 44 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>200 44 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>211.429 40 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>209.143 40 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>204.571 48 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>206.857 52 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>211.429 44 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>209.143 44 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>211.429 48 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>209.143 48 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>211.429 52 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>209.143 52 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>200 112 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>213.714 100 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>211.429 100 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>209.143 100 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>202.286 100 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>213.714 104 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>206.857 100 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>204.571 108 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>211.429 104 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>209.143 104 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>213.714 108 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>202.286 104 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>206.857 104 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>204.571 112 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>211.429 108 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>209.143 108 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>206.857 108 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>211.429 112 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>226.857 28 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>220 20 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>229.143 28 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>224.571 20 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>222.286 20 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>233.714 20 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>220 24 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>229.143 32 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>231.429 20 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>224.571 32 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>222.286 28 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>233.714 24 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>220 32 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>231.429 24 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>231.429 28 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>231.429 32 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>222.286 60 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>220 68 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>233.714 60 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>229.143 64 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>226.857 60 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>224.571 60 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>222.286 64 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>220 72 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>229.143 72 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>226.857 68 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>224.571 64 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>222.286 68 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>226.857 72 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>224.571 68 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>224.571 72 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>222.286 100 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>220 112 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>224.571 104 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>233.714 100 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>231.429 100 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>229.143 100 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>226.857 100 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>233.714 108 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>222.286 112 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>231.429 108 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>229.143 104 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>226.857 104 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>231.429 112 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>229.143 112 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>224.571 120 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>220 120 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>233.714 120 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>222.286 124 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>231.429 120 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>226.857 128 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>229.143 128 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>224.571 124 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>220 124 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>233.714 124 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>222.286 128 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>231.429 124 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>226.857 132 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>220 128 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>233.714 132 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>222.286 132 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>220 132 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>253.714 24 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>240 20 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>244.571 20 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>251.429 24 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>249.143 28 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>242.286 20 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>246.857 20 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>240 32 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>244.571 28 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>242.286 24 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>246.857 24 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>244.571 32 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>242.286 32 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>246.857 28 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>260 40 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>273.714 44 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>269.143 40 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>262.286 44 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>271.429 40 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>266.857 40 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>260 48 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>269.143 44 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>273.714 48 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>271.429 44 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>266.857 44 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>269.143 48 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>269.143 52 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>266.857 48 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>260 164 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>262.286 164 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>266.857 160 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>264.571 164 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>273.714 168 0</center>
+  <radius>2</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>269.143 168 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>262.286 172 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>271.429 164 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>266.857 164 0</center>
+  <radius>3</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>273.714 172 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>271.429 168 0</center>
+  <radius>1</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="stree" type="sphere">
+  <center>266.857 172 0</center>
+  <radius>4</radius>
+  <shader ref="treegreen"/>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>0 0 0</minPt>
+  <maxPt>0 0 0</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>20 82 0</minPt>
+  <maxPt>36 94 21</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>29.1429 104 0</minPt>
+  <maxPt>30.1429 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>33.7143 100 0</minPt>
+  <maxPt>34.7143 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>24.5714 104 0</minPt>
+  <maxPt>25.5714 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>22.2857 104 0</minPt>
+  <maxPt>23.2857 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>31.4286 100 0</minPt>
+  <maxPt>32.4286 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>20 104 0</minPt>
+  <maxPt>21 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>29.1429 112 0</minPt>
+  <maxPt>30.1429 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>33.7143 104 0</minPt>
+  <maxPt>34.7143 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>24.5714 108 0</minPt>
+  <maxPt>25.5714 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>22.2857 108 0</minPt>
+  <maxPt>23.2857 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>31.4286 108 0</minPt>
+  <maxPt>32.4286 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>20 108 0</minPt>
+  <maxPt>21 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>33.7143 108 0</minPt>
+  <maxPt>34.7143 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>20 112 0</minPt>
+  <maxPt>21 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>29.1429 120 0</minPt>
+  <maxPt>30.1429 121 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>26.8571 124 0</minPt>
+  <maxPt>27.8571 125 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>20 124 0</minPt>
+  <maxPt>21 125 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>29.1429 132 0</minPt>
+  <maxPt>30.1429 133 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>20 128 0</minPt>
+  <maxPt>21 129 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>26.8571 128 0</minPt>
+  <maxPt>27.8571 129 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>24.5714 120 0</minPt>
+  <maxPt>25.5714 121 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>22.2857 124 0</minPt>
+  <maxPt>23.2857 125 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>20 132 0</minPt>
+  <maxPt>21 133 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>22.2857 128 0</minPt>
+  <maxPt>23.2857 129 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>22.2857 132 0</minPt>
+  <maxPt>23.2857 133 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>21 184 0</minPt>
+  <maxPt>35 192 22</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>29.1429 240 0</minPt>
+  <maxPt>30.1429 241 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>26.8571 244 0</minPt>
+  <maxPt>27.8571 245 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>20 252 0</minPt>
+  <maxPt>21 253 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>31.4286 244 0</minPt>
+  <maxPt>32.4286 245 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>24.5714 252 0</minPt>
+  <maxPt>25.5714 253 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>29.1429 244 0</minPt>
+  <maxPt>30.1429 245 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>26.8571 252 0</minPt>
+  <maxPt>27.8571 253 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>33.7143 240 0</minPt>
+  <maxPt>34.7143 241 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>22.2857 240 0</minPt>
+  <maxPt>23.2857 241 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>31.4286 248 0</minPt>
+  <maxPt>32.4286 249 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>29.1429 248 0</minPt>
+  <maxPt>30.1429 249 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>33.7143 244 0</minPt>
+  <maxPt>34.7143 245 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>22.2857 244 0</minPt>
+  <maxPt>23.2857 245 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>29.1429 252 0</minPt>
+  <maxPt>30.1429 253 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>33.7143 248 0</minPt>
+  <maxPt>34.7143 249 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>22.2857 248 0</minPt>
+  <maxPt>23.2857 249 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>42 22 0</minPt>
+  <maxPt>54 34 20</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>42 41 0</minPt>
+  <maxPt>54 55 11</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>40 100 0</minPt>
+  <maxPt>41 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>42.2857 108 0</minPt>
+  <maxPt>43.2857 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>51.4286 100 0</minPt>
+  <maxPt>52.4286 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>44.5714 104 0</minPt>
+  <maxPt>45.5714 105 1</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>40 112 0</minPt>
+  <maxPt>41 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>49.1429 104 0</minPt>
+  <maxPt>50.1429 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>46.8571 100 0</minPt>
+  <maxPt>47.8571 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>53.7143 100 0</minPt>
+  <maxPt>54.7143 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>51.4286 104 0</minPt>
+  <maxPt>52.4286 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>49.1429 112 0</minPt>
+  <maxPt>50.1429 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>46.8571 104 0</minPt>
+  <maxPt>47.8571 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>53.7143 112 0</minPt>
+  <maxPt>54.7143 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>51.4286 112 0</minPt>
+  <maxPt>52.4286 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>46.8571 112 0</minPt>
+  <maxPt>47.8571 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>43 123 0</minPt>
+  <maxPt>53 133 8</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>43 180 0</minPt>
+  <maxPt>53 196 13</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>60 24 0</minPt>
+  <maxPt>61 25 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>62.2857 20 0</minPt>
+  <maxPt>63.2857 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>64.5714 24 0</minPt>
+  <maxPt>65.5714 25 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>66.8571 20 0</minPt>
+  <maxPt>67.8571 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>71.4286 20 0</minPt>
+  <maxPt>72.4286 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>69.1429 32 0</minPt>
+  <maxPt>70.1429 33 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>73.7143 20 0</minPt>
+  <maxPt>74.7143 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>64.5714 32 0</minPt>
+  <maxPt>65.5714 33 1</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>66.8571 24 0</minPt>
+  <maxPt>67.8571 25 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>71.4286 24 0</minPt>
+  <maxPt>72.4286 25 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>73.7143 24 0</minPt>
+  <maxPt>74.7143 25 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>66.8571 32 0</minPt>
+  <maxPt>67.8571 33 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>71.4286 28 0</minPt>
+  <maxPt>72.4286 29 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>73.7143 28 0</minPt>
+  <maxPt>74.7143 29 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>71.4286 32 0</minPt>
+  <maxPt>72.4286 33 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>64 104 0</minPt>
+  <maxPt>68 110 73</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>66.9477 107.471 0</minPt>
+  <maxPt>74.9434 112.468 28</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>64.5566 104.777 0</minPt>
+  <maxPt>73.4074 113.147 52</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>64.9566 102.036 0</minPt>
+  <maxPt>72.9959 107.864 46</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>63 123 0</minPt>
+  <maxPt>73 133 7</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>63 142 0</minPt>
+  <maxPt>73 154 29</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>60 160 0</minPt>
+  <maxPt>61 161 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>62.2857 160 0</minPt>
+  <maxPt>63.2857 161 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>66.8571 160 0</minPt>
+  <maxPt>67.8571 161 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>60 164 0</minPt>
+  <maxPt>61 165 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>62.2857 164 0</minPt>
+  <maxPt>63.2857 165 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>64.5714 160 0</minPt>
+  <maxPt>65.5714 161 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>66.8571 168 0</minPt>
+  <maxPt>67.8571 169 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>69.1429 160 0</minPt>
+  <maxPt>70.1429 161 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>71.4286 160 0</minPt>
+  <maxPt>72.4286 161 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>73.7143 168 0</minPt>
+  <maxPt>74.7143 169 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>60 168 0</minPt>
+  <maxPt>61 169 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>62.2857 168 0</minPt>
+  <maxPt>63.2857 169 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>64.5714 168 0</minPt>
+  <maxPt>65.5714 169 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>69.1429 172 0</minPt>
+  <maxPt>70.1429 173 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>71.4286 164 0</minPt>
+  <maxPt>72.4286 165 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>64.5714 172 0</minPt>
+  <maxPt>65.5714 173 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>71.4286 172 0</minPt>
+  <maxPt>72.4286 173 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>84 25 0</minPt>
+  <maxPt>94 33 58</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>80.9915 26.9385 0</minPt>
+  <maxPt>88.9715 34.9565 40</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>83.9614 21.9054 0</minPt>
+  <maxPt>91.9433 30.0181 16</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>85.9439 22.6913 0</minPt>
+  <maxPt>93.9798 27.2392 22</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>82 44 0</minPt>
+  <maxPt>94 52 13</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>82.2857 64 0</minPt>
+  <maxPt>83.2857 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>80 60 0</minPt>
+  <maxPt>81 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>86.8571 60 0</minPt>
+  <maxPt>87.8571 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>84.5714 60 0</minPt>
+  <maxPt>85.5714 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>89.1429 60 0</minPt>
+  <maxPt>90.1429 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>93.7143 64 0</minPt>
+  <maxPt>94.7143 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>91.4286 60 0</minPt>
+  <maxPt>92.4286 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>82.2857 68 0</minPt>
+  <maxPt>83.2857 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>80 64 0</minPt>
+  <maxPt>81 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>89.1429 64 0</minPt>
+  <maxPt>90.1429 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>91.4286 68 0</minPt>
+  <maxPt>92.4286 69 1</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>84.5714 64 0</minPt>
+  <maxPt>85.5714 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>86.8571 72 0</minPt>
+  <maxPt>87.8571 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>80 68 0</minPt>
+  <maxPt>81 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>91.4286 72 0</minPt>
+  <maxPt>92.4286 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>89.1429 68 0</minPt>
+  <maxPt>90.1429 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>84.5714 68 0</minPt>
+  <maxPt>85.5714 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>82.2857 72 0</minPt>
+  <maxPt>83.2857 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>89.1429 72 0</minPt>
+  <maxPt>90.1429 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>84.5714 72 0</minPt>
+  <maxPt>85.5714 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>81 83 0</minPt>
+  <maxPt>95 93 25</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>84 142 0</minPt>
+  <maxPt>92 154 35</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>80 160 0</minPt>
+  <maxPt>81 161 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>82.2857 164 0</minPt>
+  <maxPt>83.2857 165 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>89.1429 160 0</minPt>
+  <maxPt>90.1429 161 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>91.4286 164 0</minPt>
+  <maxPt>92.4286 165 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>80 164 0</minPt>
+  <maxPt>81 165 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>86.8571 164 0</minPt>
+  <maxPt>87.8571 165 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>84.5714 160 0</minPt>
+  <maxPt>85.5714 161 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>82.2857 168 0</minPt>
+  <maxPt>83.2857 169 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>91.4286 168 0</minPt>
+  <maxPt>92.4286 169 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>80 168 0</minPt>
+  <maxPt>81 169 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>86.8571 168 0</minPt>
+  <maxPt>87.8571 169 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>84.5714 168 0</minPt>
+  <maxPt>85.5714 169 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>82.2857 172 0</minPt>
+  <maxPt>83.2857 173 1</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>81 223 0</minPt>
+  <maxPt>95 233 20</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>100 102 0</minPt>
+  <maxPt>116 114 29</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>102.286 144 0</minPt>
+  <maxPt>103.286 145 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>100 144 0</minPt>
+  <maxPt>101 145 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>104.571 140 0</minPt>
+  <maxPt>105.571 141 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>106.857 148 0</minPt>
+  <maxPt>107.857 149 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>111.429 140 0</minPt>
+  <maxPt>112.429 141 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>113.714 144 0</minPt>
+  <maxPt>114.714 145 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>100 152 0</minPt>
+  <maxPt>101 153 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>106.857 152 0</minPt>
+  <maxPt>107.857 153 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>109.143 152 0</minPt>
+  <maxPt>110.143 153 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>104.571 148 0</minPt>
+  <maxPt>105.571 149 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>111.429 144 0</minPt>
+  <maxPt>112.429 145 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>113.714 148 0</minPt>
+  <maxPt>114.714 149 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>104.571 152 0</minPt>
+  <maxPt>105.571 153 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>111.429 152 0</minPt>
+  <maxPt>112.429 153 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>100 184 0</minPt>
+  <maxPt>112 188 105</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>100.956 181.901 0</minPt>
+  <maxPt>108.975 190.088 12</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>101.988 182.836 0</minPt>
+  <maxPt>113.98 191.081 46</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>102.959 184.986 0</minPt>
+  <maxPt>111 192.95 42</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>102 241 0</minPt>
+  <maxPt>114 255 20</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>121 43 0</minPt>
+  <maxPt>135 53 15</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>120 63 0</minPt>
+  <maxPt>136 73 9</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>123 183 0</minPt>
+  <maxPt>133 193 39</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>122.286 204 0</minPt>
+  <maxPt>123.286 205 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>124.571 200 0</minPt>
+  <maxPt>125.571 201 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>129.143 204 0</minPt>
+  <maxPt>130.143 205 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>126.857 204 0</minPt>
+  <maxPt>127.857 205 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>133.714 200 0</minPt>
+  <maxPt>134.714 201 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>131.429 200 0</minPt>
+  <maxPt>132.429 201 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>122.286 208 0</minPt>
+  <maxPt>123.286 209 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>124.571 204 0</minPt>
+  <maxPt>125.571 205 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>126.857 208 0</minPt>
+  <maxPt>127.857 209 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>129.143 208 0</minPt>
+  <maxPt>130.143 209 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>133.714 208 0</minPt>
+  <maxPt>134.714 209 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>131.429 212 0</minPt>
+  <maxPt>132.429 213 1</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>122.286 212 0</minPt>
+  <maxPt>123.286 213 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>142.286 64 0</minPt>
+  <maxPt>143.286 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>140 60 0</minPt>
+  <maxPt>141 61 1</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>144.571 60 0</minPt>
+  <maxPt>145.571 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>146.857 60 0</minPt>
+  <maxPt>147.857 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>153.714 64 0</minPt>
+  <maxPt>154.714 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>151.429 60 0</minPt>
+  <maxPt>152.429 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>149.143 60 0</minPt>
+  <maxPt>150.143 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>142.286 68 0</minPt>
+  <maxPt>143.286 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>140 64 0</minPt>
+  <maxPt>141 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>146.857 64 0</minPt>
+  <maxPt>147.857 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>144.571 68 0</minPt>
+  <maxPt>145.571 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>153.714 68 0</minPt>
+  <maxPt>154.714 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>151.429 64 0</minPt>
+  <maxPt>152.429 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>149.143 72 0</minPt>
+  <maxPt>150.143 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>142.286 72 0</minPt>
+  <maxPt>143.286 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>140 68 0</minPt>
+  <maxPt>141 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>146.857 68 0</minPt>
+  <maxPt>147.857 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>151.429 68 0</minPt>
+  <maxPt>152.429 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>146.857 72 0</minPt>
+  <maxPt>147.857 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>151.429 72 0</minPt>
+  <maxPt>152.429 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>142.286 80 0</minPt>
+  <maxPt>143.286 81 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>140 92 0</minPt>
+  <maxPt>141 93 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>144.571 84 0</minPt>
+  <maxPt>145.571 85 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>146.857 88 0</minPt>
+  <maxPt>147.857 89 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>144.571 88 0</minPt>
+  <maxPt>145.571 89 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>142.286 84 0</minPt>
+  <maxPt>143.286 85 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>151.429 88 0</minPt>
+  <maxPt>152.429 89 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>149.143 80 0</minPt>
+  <maxPt>150.143 81 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>153.714 80 0</minPt>
+  <maxPt>154.714 81 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>144.571 92 0</minPt>
+  <maxPt>145.571 93 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>146.857 92 0</minPt>
+  <maxPt>147.857 93 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>149.143 88 0</minPt>
+  <maxPt>150.143 89 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>153.714 88 0</minPt>
+  <maxPt>154.714 89 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>149.143 92 0</minPt>
+  <maxPt>150.143 93 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>153.714 92 0</minPt>
+  <maxPt>154.714 93 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>141 102 0</minPt>
+  <maxPt>155 114 9</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>143 124 0</minPt>
+  <maxPt>153 132 21</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>143 183 0</minPt>
+  <maxPt>151 195 92</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>140.641 182.962 0</minPt>
+  <maxPt>149.3 190.99 20</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>140.963 181.99 0</minPt>
+  <maxPt>148.998 189.968 84</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>141.619 186.957 0</minPt>
+  <maxPt>150.333 194.943 30</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>161 43 0</minPt>
+  <maxPt>175 53 4</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>162 122 0</minPt>
+  <maxPt>174 134 43</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>168 145 0</minPt>
+  <maxPt>172 149 129</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>166.914 147.092 0</minPt>
+  <maxPt>170.983 152.848 22</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>162.349 143.815 0</minPt>
+  <maxPt>167.596 148.138 120</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>162.631 144.902 0</minPt>
+  <maxPt>171.309 149.021 112</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>160 160 0</minPt>
+  <maxPt>176 176 54.6</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>161 161 54.6</minPt>
+  <maxPt>175 175 72.8</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>162 162 72.8</minPt>
+  <maxPt>174 174 91</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>161 182 0</minPt>
+  <maxPt>175 194 31</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>161 202 0</minPt>
+  <maxPt>175 214 24</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>162 221 0</minPt>
+  <maxPt>174 235 23</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>161 242 0</minPt>
+  <maxPt>175 254 14</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>193.714 80 0</minPt>
+  <maxPt>194.714 81 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>180 80 0</minPt>
+  <maxPt>181 81 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>191.429 80 0</minPt>
+  <maxPt>192.429 81 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>182.286 88 0</minPt>
+  <maxPt>183.286 89 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>189.143 80 0</minPt>
+  <maxPt>190.143 81 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>186.857 84 0</minPt>
+  <maxPt>187.857 85 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>184.571 92 0</minPt>
+  <maxPt>185.571 93 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>180 92 0</minPt>
+  <maxPt>181 93 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>193.714 84 0</minPt>
+  <maxPt>194.714 85 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>191.429 84 0</minPt>
+  <maxPt>192.429 85 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>182.286 92 0</minPt>
+  <maxPt>183.286 93 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>186.857 88 0</minPt>
+  <maxPt>187.857 89 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>189.143 84 0</minPt>
+  <maxPt>190.143 85 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>193.714 88 0</minPt>
+  <maxPt>194.714 89 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>191.429 92 0</minPt>
+  <maxPt>192.429 93 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>186.857 92 0</minPt>
+  <maxPt>187.857 93 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>189.143 88 0</minPt>
+  <maxPt>190.143 89 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>193.714 92 0</minPt>
+  <maxPt>194.714 93 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>182 103 0</minPt>
+  <maxPt>194 113 36</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>183 127 0</minPt>
+  <maxPt>195 131 51</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>184.995 128.662 0</minPt>
+  <maxPt>192.94 133.237 36</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>182.953 122.017 0</minPt>
+  <maxPt>194.938 127.917 20</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>180.993 122.944 0</minPt>
+  <maxPt>188.964 130.97 40</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>184 141 0</minPt>
+  <maxPt>192 155 33</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>182 163 0</minPt>
+  <maxPt>194 173 14</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>180 184 0</minPt>
+  <maxPt>196 192 21</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>181 222 0</minPt>
+  <maxPt>193 232 53</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>181.971 224.953 0</minPt>
+  <maxPt>189.959 232.97 34</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>183.996 221.996 0</minPt>
+  <maxPt>195.994 229.991 8</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>181.938 221.959 0</minPt>
+  <maxPt>193.942 229.961 24</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>182.286 240 0</minPt>
+  <maxPt>183.286 241 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>180 244 0</minPt>
+  <maxPt>181 245 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>184.571 240 0</minPt>
+  <maxPt>185.571 241 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>193.714 240 0</minPt>
+  <maxPt>194.714 241 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>191.429 244 0</minPt>
+  <maxPt>192.429 245 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>189.143 240 0</minPt>
+  <maxPt>190.143 241 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>182.286 244 0</minPt>
+  <maxPt>183.286 245 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>180 252 0</minPt>
+  <maxPt>181 253 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>184.571 244 0</minPt>
+  <maxPt>185.571 245 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>186.857 240 0</minPt>
+  <maxPt>187.857 241 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>193.714 244 0</minPt>
+  <maxPt>194.714 245 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>191.429 248 0</minPt>
+  <maxPt>192.429 249 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>189.143 244 0</minPt>
+  <maxPt>190.143 245 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>182.286 252 0</minPt>
+  <maxPt>183.286 253 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>184.571 248 0</minPt>
+  <maxPt>185.571 249 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>186.857 244 0</minPt>
+  <maxPt>187.857 245 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>193.714 248 0</minPt>
+  <maxPt>194.714 249 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>191.429 252 0</minPt>
+  <maxPt>192.429 253 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>186.857 248 0</minPt>
+  <maxPt>187.857 249 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>182.286 272 0</minPt>
+  <maxPt>183.286 273 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>184.571 260 0</minPt>
+  <maxPt>185.571 261 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>186.857 260 0</minPt>
+  <maxPt>187.857 261 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>180 272 0</minPt>
+  <maxPt>181 273 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>189.143 260 0</minPt>
+  <maxPt>190.143 261 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>193.714 260 0</minPt>
+  <maxPt>194.714 261 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>191.429 264 0</minPt>
+  <maxPt>192.429 265 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>184.571 272 0</minPt>
+  <maxPt>185.571 273 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>189.143 264 0</minPt>
+  <maxPt>190.143 265 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>193.714 264 0</minPt>
+  <maxPt>194.714 265 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>186.857 268 0</minPt>
+  <maxPt>187.857 269 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>193.714 268 0</minPt>
+  <maxPt>194.714 269 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>189.143 272 0</minPt>
+  <maxPt>190.143 273 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>200 40 0</minPt>
+  <maxPt>201 41 1</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>202.286 52 0</minPt>
+  <maxPt>203.286 53 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>204.571 40 0</minPt>
+  <maxPt>205.571 41 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>213.714 52 0</minPt>
+  <maxPt>214.714 53 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>206.857 44 0</minPt>
+  <maxPt>207.857 45 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>200 44 0</minPt>
+  <maxPt>201 45 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>209.143 40 0</minPt>
+  <maxPt>210.143 41 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>211.429 40 0</minPt>
+  <maxPt>212.429 41 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>204.571 48 0</minPt>
+  <maxPt>205.571 49 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>206.857 52 0</minPt>
+  <maxPt>207.857 53 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>211.429 44 0</minPt>
+  <maxPt>212.429 45 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>209.143 44 0</minPt>
+  <maxPt>210.143 45 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>211.429 48 0</minPt>
+  <maxPt>212.429 49 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>209.143 48 0</minPt>
+  <maxPt>210.143 49 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>211.429 52 0</minPt>
+  <maxPt>212.429 53 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>209.143 52 0</minPt>
+  <maxPt>210.143 53 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>213.714 100 0</minPt>
+  <maxPt>214.714 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>200 112 0</minPt>
+  <maxPt>201 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>211.429 100 0</minPt>
+  <maxPt>212.429 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>209.143 100 0</minPt>
+  <maxPt>210.143 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>202.286 100 0</minPt>
+  <maxPt>203.286 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>213.714 104 0</minPt>
+  <maxPt>214.714 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>206.857 100 0</minPt>
+  <maxPt>207.857 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>204.571 108 0</minPt>
+  <maxPt>205.571 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>211.429 104 0</minPt>
+  <maxPt>212.429 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>209.143 104 0</minPt>
+  <maxPt>210.143 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>202.286 104 0</minPt>
+  <maxPt>203.286 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>213.714 108 0</minPt>
+  <maxPt>214.714 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>206.857 104 0</minPt>
+  <maxPt>207.857 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>204.571 112 0</minPt>
+  <maxPt>205.571 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>211.429 108 0</minPt>
+  <maxPt>212.429 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>209.143 108 0</minPt>
+  <maxPt>210.143 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>206.857 108 0</minPt>
+  <maxPt>207.857 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>211.429 112 0</minPt>
+  <maxPt>212.429 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>200 141 0</minPt>
+  <maxPt>216 155 32.8</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>201 142 32.8</minPt>
+  <maxPt>215 154 46.6</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>202 143 46.6</minPt>
+  <maxPt>214 153 60.4</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>203 161 0</minPt>
+  <maxPt>213 175 31</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>201 184 0</minPt>
+  <maxPt>215 192 37</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>206 204 0</minPt>
+  <maxPt>210 208 93</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>206.236 207.328 0</minPt>
+  <maxPt>211.712 212.648 26</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>204.992 205.408 0</minPt>
+  <maxPt>212.948 214.553 82</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>205.942 203.973 0</minPt>
+  <maxPt>213.942 211.946 50</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>203 222 0</minPt>
+  <maxPt>213 234 26</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>220 20 0</minPt>
+  <maxPt>221 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>226.857 28 0</minPt>
+  <maxPt>227.857 29 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>229.143 28 0</minPt>
+  <maxPt>230.143 29 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>231.429 20 0</minPt>
+  <maxPt>232.429 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>224.571 20 0</minPt>
+  <maxPt>225.571 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>222.286 20 0</minPt>
+  <maxPt>223.286 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>233.714 20 0</minPt>
+  <maxPt>234.714 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>220 24 0</minPt>
+  <maxPt>221 25 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>229.143 32 0</minPt>
+  <maxPt>230.143 33 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>224.571 32 0</minPt>
+  <maxPt>225.571 33 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>222.286 28 0</minPt>
+  <maxPt>223.286 29 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>233.714 24 0</minPt>
+  <maxPt>234.714 25 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>220 32 0</minPt>
+  <maxPt>221 33 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>231.429 24 0</minPt>
+  <maxPt>232.429 25 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>231.429 28 0</minPt>
+  <maxPt>232.429 29 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>231.429 32 0</minPt>
+  <maxPt>232.429 33 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>221 42 0</minPt>
+  <maxPt>235 54 14</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>222.286 60 0</minPt>
+  <maxPt>223.286 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>220 68 0</minPt>
+  <maxPt>221 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>233.714 60 0</minPt>
+  <maxPt>234.714 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>229.143 64 0</minPt>
+  <maxPt>230.143 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>226.857 60 0</minPt>
+  <maxPt>227.857 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>224.571 60 0</minPt>
+  <maxPt>225.571 61 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>222.286 64 0</minPt>
+  <maxPt>223.286 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>220 72 0</minPt>
+  <maxPt>221 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>229.143 72 0</minPt>
+  <maxPt>230.143 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>226.857 68 0</minPt>
+  <maxPt>227.857 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>224.571 64 0</minPt>
+  <maxPt>225.571 65 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>222.286 68 0</minPt>
+  <maxPt>223.286 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>226.857 72 0</minPt>
+  <maxPt>227.857 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>224.571 68 0</minPt>
+  <maxPt>225.571 69 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>224.571 72 0</minPt>
+  <maxPt>225.571 73 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>221 80 0</minPt>
+  <maxPt>235 96 5</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>222.286 100 0</minPt>
+  <maxPt>223.286 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>220 112 0</minPt>
+  <maxPt>221 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>224.571 104 0</minPt>
+  <maxPt>225.571 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>233.714 100 0</minPt>
+  <maxPt>234.714 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>231.429 100 0</minPt>
+  <maxPt>232.429 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>229.143 100 0</minPt>
+  <maxPt>230.143 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>226.857 100 0</minPt>
+  <maxPt>227.857 101 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>233.714 108 0</minPt>
+  <maxPt>234.714 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>222.286 112 0</minPt>
+  <maxPt>223.286 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>231.429 108 0</minPt>
+  <maxPt>232.429 109 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>229.143 104 0</minPt>
+  <maxPt>230.143 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>226.857 104 0</minPt>
+  <maxPt>227.857 105 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>231.429 112 0</minPt>
+  <maxPt>232.429 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>229.143 112 0</minPt>
+  <maxPt>230.143 113 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>222.286 124 0</minPt>
+  <maxPt>223.286 125 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>220 120 0</minPt>
+  <maxPt>221 121 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>224.571 120 0</minPt>
+  <maxPt>225.571 121 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>233.714 120 0</minPt>
+  <maxPt>234.714 121 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>226.857 128 0</minPt>
+  <maxPt>227.857 129 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>231.429 120 0</minPt>
+  <maxPt>232.429 121 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>229.143 128 0</minPt>
+  <maxPt>230.143 129 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>224.571 124 0</minPt>
+  <maxPt>225.571 125 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>220 124 0</minPt>
+  <maxPt>221 125 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>233.714 124 0</minPt>
+  <maxPt>234.714 125 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>222.286 128 0</minPt>
+  <maxPt>223.286 129 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>231.429 124 0</minPt>
+  <maxPt>232.429 125 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>226.857 132 0</minPt>
+  <maxPt>227.857 133 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>220 128 0</minPt>
+  <maxPt>221 129 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>233.714 132 0</minPt>
+  <maxPt>234.714 133 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>222.286 132 0</minPt>
+  <maxPt>223.286 133 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>220 132 0</minPt>
+  <maxPt>221 133 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>221 142 0</minPt>
+  <maxPt>235 154 9</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>240 20 0</minPt>
+  <maxPt>241 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>242.286 20 0</minPt>
+  <maxPt>243.286 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>244.571 20 0</minPt>
+  <maxPt>245.571 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>253.714 24 0</minPt>
+  <maxPt>254.714 25 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>251.429 24 0</minPt>
+  <maxPt>252.429 25 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>249.143 28 0</minPt>
+  <maxPt>250.143 29 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>246.857 20 0</minPt>
+  <maxPt>247.857 21 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>240 32 0</minPt>
+  <maxPt>241 33 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>244.571 28 0</minPt>
+  <maxPt>245.571 29 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>242.286 24 0</minPt>
+  <maxPt>243.286 25 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>246.857 24 0</minPt>
+  <maxPt>247.857 25 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>244.571 32 0</minPt>
+  <maxPt>245.571 33 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>242.286 32 0</minPt>
+  <maxPt>243.286 33 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>246.857 28 0</minPt>
+  <maxPt>247.857 29 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>247 65 0</minPt>
+  <maxPt>251 69 53</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>244.415 64.1888 0</minPt>
+  <maxPt>253.521 73.7736 28</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>243.942 68.7803 0</minPt>
+  <maxPt>251.946 73.18 12</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>240.644 67.6379 0</minPt>
+  <maxPt>249.283 72.3433 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>243 83 0</minPt>
+  <maxPt>251 89 56</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>244.284 80.9952 0</minPt>
+  <maxPt>249.672 88.96 14</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>242.973 84.945 0</minPt>
+  <maxPt>250.999 92.9439 22</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>244.984 84.6306 0</minPt>
+  <maxPt>252.972 93.2758 10</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>243 222 0</minPt>
+  <maxPt>253 234 6</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>243 260 0</minPt>
+  <maxPt>253 276 17</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>260 40 0</minPt>
+  <maxPt>261 41 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>262.286 44 0</minPt>
+  <maxPt>263.286 45 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>269.143 40 0</minPt>
+  <maxPt>270.143 41 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>273.714 44 0</minPt>
+  <maxPt>274.714 45 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>271.429 40 0</minPt>
+  <maxPt>272.429 41 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>266.857 40 0</minPt>
+  <maxPt>267.857 41 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>260 48 0</minPt>
+  <maxPt>261 49 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>273.714 48 0</minPt>
+  <maxPt>274.714 49 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>269.143 44 0</minPt>
+  <maxPt>270.143 45 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>271.429 44 0</minPt>
+  <maxPt>272.429 45 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>266.857 44 0</minPt>
+  <maxPt>267.857 45 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>269.143 48 0</minPt>
+  <maxPt>270.143 49 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>266.857 48 0</minPt>
+  <maxPt>267.857 49 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>269.143 52 0</minPt>
+  <maxPt>270.143 53 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>260 64 0</minPt>
+  <maxPt>276 72 15</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>262.286 164 0</minPt>
+  <maxPt>263.286 165 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>260 164 0</minPt>
+  <maxPt>261 165 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>266.857 160 0</minPt>
+  <maxPt>267.857 161 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>264.571 164 0</minPt>
+  <maxPt>265.571 165 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>273.714 168 0</minPt>
+  <maxPt>274.714 169 1</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>269.143 168 0</minPt>
+  <maxPt>270.143 169 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>262.286 172 0</minPt>
+  <maxPt>263.286 173 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>271.429 164 0</minPt>
+  <maxPt>272.429 165 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>266.857 164 0</minPt>
+  <maxPt>267.857 165 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>273.714 172 0</minPt>
+  <maxPt>274.714 173 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>271.429 168 0</minPt>
+  <maxPt>272.429 169 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>266.857 172 0</minPt>
+  <maxPt>267.857 173 2</maxPt>
+</shape>
+
+<shape name="bbox" type="box">
+  <shader ref="grey"/>
+  <minPt>261 182 0</minPt>
+  <maxPt>275 194 20</maxPt>
+</shape>
+
+</scene>
