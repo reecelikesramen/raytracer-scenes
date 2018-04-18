@@ -4,9 +4,9 @@ This is a repository of scene data used for testing rendering code.  There are d
 
 ## Scene_A
 
-The `< sceneA >` folder contains the base level scenes.  You should test your code with these scenes as they represent the basic capabilities that your rendering code will support.
+The `scenes_A` folder contains the base level scenes.  You should test your code with these scenes as they represent the basic capabilities that your rendering code will support.
 
 oneSphere.xml
-![oneSphere.xml](sceneData/scenes_A/renderedImages/boxSphereTest.png?raw=true "oneSphere.png")
+![oneSphere.xml](/sceneData/scenes_A/renderedImages/boxSphereTest.png?raw=true "oneSphere.png")
 
 
