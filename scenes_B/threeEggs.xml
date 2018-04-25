@@ -94,6 +94,7 @@
     <specular>1 1 1</specular>
     <phongExp>128.0</phongExp>
     <mirrorCoef>0.5</mirrorCoef>
+    <roughness>0.0</roughness>
   </shader>
 
   <shape name="leftellipsoid" type="instance" id="eggBase">
