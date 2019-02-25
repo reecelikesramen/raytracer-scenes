@@ -43,7 +43,8 @@
     <diffuse>0.3 0.3 0.3</diffuse>
     <specular>1.0 1.0 1.0</specular>
     <phongExp>4.0</phongExp>
-    <mirrorCoef>0.08</mirrorCoef>
+    <mirrorCoef>0.5</mirrorCoef>
+    <roughness>0.5</roughness>
   </shader>
 
   <!-- Ground plane -->

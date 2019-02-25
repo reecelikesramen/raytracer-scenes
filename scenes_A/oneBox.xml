@@ -7,8 +7,8 @@
   <!-- Simple camera placed back from the origin looking in -Z
        direction -->
   <camera name="main" type="perspective">
-    <position>0 0 4</position>
-    <viewDir>0 0 -1</viewDir>
+    <position>-8 4 4</position>
+    <viewDir>2 -1 -1</viewDir>
     <focalLength>1.0</focalLength>
     <imagePlaneWidth>0.5</imagePlaneWidth>
   </camera>
