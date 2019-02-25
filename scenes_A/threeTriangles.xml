@@ -10,7 +10,7 @@
        direction -->
   <camera name="main" type="perspective">
     <position>0 0 0</position>
-    <viewDir>0 0 -1</viewDir>
+    <viewDir>0 0.0 -1</viewDir>
     <focalLength>1.0</focalLength>
     <imagePlaneWidth>0.5</imagePlaneWidth>
   </camera>
@@ -37,7 +37,7 @@
   <!-- Sphere placed just above the ground using the blue Lambertian
        shader. -->
   <shape name="triangle1" type="triangle">
-    <shader ref="red" />
+   <shader ref="red" />
     <v0>-1.2 -0.2 -7</v0>
     <v1>0.8 -0.5 -5</v1>
     <v2>0.9 0 -5</v2>
@@ -48,7 +48,7 @@
     <v0>0.773205 -0.93923 -7</v0>
     <v1>0.0330127 0.94282 -5</v1>
     <v2>-0.45 0.779423 -5</v2>
-  </shape>
+  </shape> 
 
   <shape name="triangle3" type="triangle">
     <shader ref="blue" />
@@ -58,3 +58,6 @@
   </shape>
 
 </scene>
+
+<!-- , bary=( 0.8624, 0.09698, 0.04063) -->
+<!-- , bary=( 0.7803, 0.01183, 0.2079) -->
