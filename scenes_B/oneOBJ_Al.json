@@ -21,7 +21,7 @@
 	"shape": [{
 	    "file": "objFiles/al.obj",
 	    "shader": {
-		"_ref": "whiteMat"
+		"_ref": "greyMat"
 	    },
 	    "_name": "AlModel",
 	    "_type": "mesh"
