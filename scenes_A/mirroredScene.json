@@ -28,14 +28,13 @@
 		"_name": "redPlastic",
 		"_type": "BlinnPhong"
 	    },
-
 	    {
 		"_name": "blueMat",
                 "_type": "Lambertian",
 		"diffuse": "0 0 0.5"
 	    },
 	    {
-		"_name=": "green1",
+		"_name": "green1",
 		"_type": "Lambertian",
 		"diffuse": "0 1.0 0.0"
 	    },
@@ -49,7 +48,9 @@
 		"_type": "Lambertian",
 		"diffuse": "0.8 0.3 0.3"
 	    },
+
 	    {
+
 		"_name": "gold",
 		"_type": "BlinnPhong",
 		"diffuse": "0.75164 0.60648 0.22648",
