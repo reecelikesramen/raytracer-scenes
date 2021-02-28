@@ -2,7 +2,7 @@
 	"scene": {
 		"camera": [{
 			"position": "-180 -180 -180",
-			"lookatPoint": "0.0 0.0 0.0",
+			"lookatPoint": "0.0 50.0 0.0",
 			"focalLength": 0.25,
 			"imagePlaneWidth": 0.5,
 			"_name": "main",
@@ -9116,6 +9116,6 @@
 				"_type": "sphere"
 			}
 		],
-		"_bgColor": "0.0 0.8 1.0"
+		"_bgColor": "0.2 0.2 1.0"
 	}
 }
