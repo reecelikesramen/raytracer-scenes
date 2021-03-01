@@ -8,6 +8,7 @@
 	    "_name": "main",
 	    "_type": "perspective"
 	}],
+	
 	"light": [
 	    {
 		"position": "-10.0 10.0 1.0",
@@ -25,6 +26,7 @@
 		"_type": "point"
 	    }
 	],
+	
 	"shader": [
 	    {
 		"diffuse": "0.5 0.5 0.5",
@@ -72,6 +74,7 @@
 		"_type": "BlinnPhongMirrored"
 	    }
 	],
+	
 	"shape": [
 	    {
 		"shader": {
@@ -82,98 +85,144 @@
 		"_name": "ground",
 		"_type": "box"
 	    },
+
 	    {
 		"shader": {
 		    "_ref": "redBlinnPhong"
 		},
-		"transform": {
-		    "translate": "-3.0 0.7 0.0",
-		    "scale": "0.25 0.25 0.25",
-		    "_name": "xform1"
-		},
+
+		"xform": [
+		    {
+			"type" : "translate",
+			"amount": "-3.0 0.7 0.0"
+		    },
+		    {
+			"type" : "scale",
+			"amount" : "0.25 0.25 0.25"
+		    }
+		],
+
 		"_name": "leftsphere",
 		"_type": "instance",
 		"_id": "eggBase"
 	    },
+
 	    {
 		"shader": {
 		    "_ref": "greenBlinnPhong"
 		},
-		"transform": {
-		    "translate": "0.0 0.7 0.0",
-		    "scale": "0.25 0.25 0.25",
-		    "_name": "xform1"
-		},
+		"xform": [
+		    {
+			"type" : "translate",
+			"amount" : "0.0 0.7 0.0"
+		    },
+		    {
+			"type" : "scale",
+			"amount" : "0.25 0.25 0.25"
+		    }
+		],
+
 		"_name": "midsphere",
 		"_type": "instance",
 		"_id": "eggBase"
 	    },
+	    
 	    {
 		"shader": {
 		    "_ref": "blueBlinnPhong"
 		},
-		"transform": {
-		    "translate": "3.0 0.7 0.0",
-		    "scale": "0.25 0.25 0.25",
-		    "_name": "xform1"
-		},
+		"xform": [
+		    {
+			"type" : "translate",
+			"amount" : "3.0 0.7 0.0"
+		    },
+		    {
+			"type" : "scale",
+			"amount" : "0.25 0.25 0.25"
+		    }
+		],
 		"_name": "rightsphere",
 		"_type": "instance",
 		"_id": "eggBase"
 	    },
+	    
 	    {
 		"shader": {
 		    "_ref": "redMat"
 		},
-		"transform": {
-		    "translate": "-2.5 2.0 -4.0",
-		    "scale": "1.0 2.0 1.0",
-		    "_name": "xform1"
-		},
+
+		"xform" : [
+		    {
+			"type" : "translate",
+			"amount" : "-2.5 2.0 -4.0"
+		    },
+		    {
+			"type" : "scale",
+			"amount" : "1.0 2.0 1.0"
+		    }
+		],
+		
 		"_name": "leftellipsoid",
 		"_type": "instance",
 		"_id": "eggBase"
 	    },
+	    
 	    {
 		"shader": {
 		    "_ref": "greenMirroredBlinnPhong"
 		},
-		"transform": {
-		    "translate": "0.0 1.5 -4.0",
-		    "scale": "0.5 1.5 1.0",
-		    "_name": "xform1"
-		},
+		"xform": [
+		    {
+			"type" : "translate",
+			"amount" : "0.0 1.5 -4.0"
+		    },
+		    {
+			"type" : "scale",
+			"amount" : "0.5 1.5 1.0"
+		    }
+		],
 		"_name": "midellipsoid",
 		"_type": "instance",
 		"_id": "eggBase"
 	    },
+	    
 	    {
 		"shader": {
 		    "_ref": "blueMat"
 		},
-		"transform": {
-		    "translate": "2.5 1.5 -4.0",
-		    "rotate": {
-			"_axis": "X",
-			"_angle": 90.0
+		"xform": [
+		    {
+			"type" : "translate",
+			"amount" : "2.5 1.5 -4.0"
 		    },
-		    "scale": "1.0 0.5 1.5",
-		    "_name": "xform1"
-		},
+		    {
+			"type" : "rotation",
+			"axis" : "X",
+			"amount" : 90.0
+		    },
+		    {
+			"type" : "scale",
+			"amount" : "1.0 0.5 1.5"
+		    }
+		],
 		"_name": "rightellipsoid",
 		"_type": "instance",
 		"_id": "eggBase"
 	    }
 	],
-	"instance": [{
-	    "shader": {
-		"_ref": "blueMat"
-	    },
-	    "center": "0.0 0.0 0.0",
-	    "radius": 1.0,
-	    "_name": "eggBase",
-	    "_type": "sphere"
-	}],
+
+	"instance": [
+	    {
+		"shader": {
+		    "_ref": "blueMat"
+		},
+		"center": "0.0 0.0 0.0",
+		"radius": 1.0,
+		"_name": "eggBase",
+		"_type": "sphere"
+	    }
+	],
+
 	"_bgColor": "0.5 0.5 0.5"
     }
 }
