@@ -10,20 +10,13 @@
 	}],
 	
 	"light": [
-            {
-		"position": "-50.0 50.0 48.0",
-		"intensity": "0.8 0.8 0.8",
-		"normal": "4.0 -4.0 -3.0",
-		"width": 1.0,
-		"length": 1.0,
-		"_type": "point"
-            },
+
             {
 		"position": "0.0 50.0 0.0",
 		"intensity": "1.0 1.0 1.0",
 		"normal": "0.0 -1.0 0.0",
-		"width": 4.0,
-		"length": 4.0,
+		"width": 40.0,
+		"length": 40.0,
 		"_type": "area"
             }
 	],
@@ -60,7 +53,7 @@
 		"_type": "image"
             },
             {
-		"sourcefile": "images/jupiter_2k.png",
+		"sourcefile": "images/jupiter_map_css_plus_juno_bj.png",
 		"_name": "JupiterDiffuse",
 		"_type": "image"
             },
@@ -95,7 +88,7 @@
 		"mirrorCoef": 0.8,
 		"roughness": 0.1,
 		"_name": "greyMirroredTextured",
-		"_type": "Lambertian"
+		"_type": "BlinnPhongMirrored"
             },
             {
 		"diffuse": {
@@ -103,12 +96,12 @@
 		    "data": "1.0 1.0 1.0"
 		},
 		"specular": {
-		    "_tex": "EarthSpecular",
-		    "__text": "1 1 1"
+		    "tex": "EarthSpecular",
+		    "data": "1 1 1"
 		},
 		"phongExp": 64.0,
 		"_name": "EarthShader",
-		"_type": "Lambertian"
+		"_type": "BlinnPhong"
             },
             {
 		"diffuse": {
@@ -116,7 +109,7 @@
 		    "data": "1.0 1.0 1.0"
 		},
 		"_name": "MoonShader",
-		"_type": "Lambertian"
+		"_type": "Diffuse"
             },
             {
 		"diffuse": {
@@ -124,7 +117,7 @@
 		    "data": "1.0 1.0 1.0"
 		},
 		"_name": "VenusShader",
-		"_type": "Lambertian"
+		"_type": "Diffuse"
             },
             {
 		"diffuse": {
@@ -132,7 +125,7 @@
 		    "data": "1.0 1.0 1.0"
 		},
 		"_name": "MarsShader",
-		"_type": "Lambertian"
+		"_type": "Diffuse"
             },
             {
 		"diffuse": {
@@ -194,14 +187,14 @@
 			"amount" : "0.0 5.0 0.0"
 		    },
 		    {
-			"type" : "rotate",
+			"type" : "rotation",
 			"axis" : "Z",
 			"amount": 23.5
                     },
                     {
-			"type" : "rotate",
+			"type" : "rotation",
 			"axis": "Y",
-			"amount": 0.0
+			"amount": 265.0
                     },
 		    {
 			"type" : "scale",
@@ -220,11 +213,11 @@
 
 		"xform" : [
 		    {
-			"type" : "transform",
-			"amount" : "-7.0 6.0 1.5"
+			"type" : "translate",
+			"amount" : "-7.0 10.0 -1.5"
 		    },
 		    {
-			"type" : "rotate",
+			"type" : "rotation",
 			"axis": "Y",
 			"amount" : 0.0
                     }
@@ -245,7 +238,7 @@
 			"amount" : "8.0 5.0 9.0"
 		    },
 		    {
-			"type" : "rotate",
+			"type" : "rotation",
 			"axis": "Y",
 			"amount" : 0.0
                     },
@@ -268,7 +261,7 @@
 			"amount" : "-8.0 4.0 9.0"
 		    },
 		    {
-			"type" : "rotate",
+			"type" : "rotation",
 			"axis": "Y",
 			"amount": 0.0
                     },
@@ -291,7 +284,7 @@
 			"amount" : "20.0 19.0 -18.0"
 		    },
 		    {
-			"type" : "rotate",
+			"type" : "rotation",
 			"axis" : "Y",
 			"amount": 60.0
 		    },
@@ -314,7 +307,7 @@
 			"amount" : "-17.0 14.0 -23.0"
 		    },
 		    {
-			"type" : "rotate",
+			"type" : "rotation",
 			"axis" : "Y",
 			"amount": 80.0
 		    },
@@ -337,7 +330,7 @@
 			"amount" : "-32.0 11.0 5.0"
 		    },
 		    {
-			"type" : "rotate",
+			"type" : "rotation",
 			"axis": "Y",
 			"amount": 0.0
 		    },
