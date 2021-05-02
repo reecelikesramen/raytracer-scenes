@@ -42,13 +42,17 @@
 		"diffuse": "0.0 0.0 1.0",
 		"_name": "blueMat",
 		"_type": "Diffuse"
+	    },
+	    {
+		"_name": "chrome",
+		"_type": "Mirror"
 	    }
 	],
 	"shape": [
 
 	    {
 		"shader": {
-		    "_ref": "whiteMat"
+		    "_ref": "chrome"
 		},
 		"center": "0 0 0",
 		"radius": 0.5,
