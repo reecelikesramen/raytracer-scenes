@@ -1,36 +1,35 @@
 {
   "scene": {
-    "camera": [
+    "cameras": [
       {
         "position": "-8 4 4",
-        "viewDir": "2 -1 -1",
-        "focalLength": 1.0,
-        "imagePlaneWidth": 0.5,
+        "view_dir": "2 -1 -1",
+        "focal_length": 1.0,
         "_name": "main",
         "_type": "perspective"
       }
     ],
-    "light": [
+    "lights": [
       {
         "position": "0 4 4",
         "intensity": "1.0 1.0 1.0",
         "_type": "point"
       }
     ],
-    "shader": [
+    "shaders": [
       {
         "diffuse": "0 0 1",
         "_name": "blue",
         "_type": "Lambertian"
       }
     ],
-    "shape": [
+    "shapes": [
       {
         "shader": {
           "_ref": "blue"
         },
-        "minPt": "-0.5 -0.5 -0.5",
-        "maxPt": "0.5 0.5 0.5",
+        "min": "-0.5 -0.5 -0.5",
+        "max": "0.5 0.5 0.5",
         "_name": "box1",
         "_type": "box"
       },
@@ -38,8 +37,8 @@
         "shader": {
           "_ref": "blue"
         },
-        "minPt": "-1.5 -0.5 -1.5",
-        "maxPt": "-0.5 0.5 -0.5",
+        "min": "-1.5 -0.5 -1.5",
+        "max": "-0.5 0.5 -0.5",
         "_name": "box2",
         "_type": "box"
       },

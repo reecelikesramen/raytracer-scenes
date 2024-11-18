@@ -85,12 +85,12 @@
             "amount": "5 5 5"
           },
           {
-            "type": "rotation",
+            "type": "rotate",
             "axis": "Z",
             "amount": 23.5
           },
           {
-            "type": "rotation",
+            "type": "rotate",
             "axis": "Y",
             "amount": 75.0
           }

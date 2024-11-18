@@ -304,7 +304,7 @@
         "shader": {
           "_ref": "greyGlaze"
         },
-        "minPt": "4.5.0 0.0 -7.5",
+        "minPt": "4.5 0.0 -7.5",
         "maxPt": "5.5 7.2 -6.5",
         "_name": "pedestal1",
         "_type": "box"

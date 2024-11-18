@@ -58,7 +58,7 @@
         "mirrorCoef": 0.5,
         "roughness": 0.01,
         "_name": "g0",
-        "_type": "Mirror"
+        "_type": "BlinnPhongMirror"
       },
       {
         "diffuse": "0.5 0.5 0.5",
@@ -67,7 +67,7 @@
         "mirrorCoef": 0.5,
         "roughness": 0.05,
         "_name": "g1",
-        "_type": "Mirror"
+        "_type": "BlinnPhongMirror"
       },
       {
         "diffuse": "0.5 0.5 0.5",
@@ -76,7 +76,7 @@
         "mirrorCoef": 0.5,
         "roughness": 0.1,
         "_name": "g2",
-        "_type": "Mirror"
+        "_type": "BlinnPhongMirror"
       },
       {
         "diffuse": "0.5 0.5 0.5",
@@ -85,7 +85,7 @@
         "mirrorCoef": 0.5,
         "roughness": 0.15,
         "_name": "g3",
-        "_type": "Mirror"
+        "_type": "BlinnPhongMirror"
       },
       {
         "diffuse": "0.5 0.5 0.5",
@@ -94,7 +94,7 @@
         "mirrorCoef": 0.5,
         "roughness": 0.2,
         "_name": "g4",
-        "_type": "Mirror"
+        "_type": "BlinnPhongMirror"
       }
     ],
     "shape": [

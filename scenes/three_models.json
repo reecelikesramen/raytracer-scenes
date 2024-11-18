@@ -29,9 +29,11 @@
         "_type": "Lambertian"
       },
       {
-        "diffuse": "0.4 0.4 1.0",
+        "diffuse": "1.0 1.0 0.4",
+        "specular": "1.0 1.0 1.0",
+        "phongExp": 128.0,
         "_name": "gooch",
-        "_type": "CoolToWarm"
+        "_type": "BlinnPhong"
       }
     ],
 

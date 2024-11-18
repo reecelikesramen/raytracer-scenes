@@ -10,13 +10,14 @@
         "_type": "perspective"
       }
     ],
-
     "light": [
       {
         "_type": "shape",
         "intensity": "0.0 1.0 0.0",
-
         "shape": {
+          "shader": {
+            "_ref": "white"
+          },
           "xform": [
             {
               "type": "translate",
@@ -28,7 +29,6 @@
               "amount": -75
             }
           ],
-
           "_name": "dragon1",
           "_type": "instance",
           "_id": "dragonModel"
@@ -38,8 +38,10 @@
       {
         "_type": "shape",
         "intensity": "1.0 0.0 0.0",
-
         "shape": {
+          "shader": {
+            "_ref": "white"
+          },
           "xform": [
             {
               "type": "translate",
@@ -51,8 +53,7 @@
               "amount": -75
             }
           ],
-
-          "_name": "dragon1",
+          "_name": "dragon2",
           "_type": "instance",
           "_id": "dragonModel"
         }
@@ -61,8 +62,10 @@
       {
         "_type": "shape",
         "intensity": "0.0 0.0 1.0",
-
         "shape": {
+          "shader": {
+            "_ref": "white"
+          },
           "xform": [
             {
               "type": "translate",
@@ -74,14 +77,12 @@
               "amount": -75
             }
           ],
-
-          "_name": "dragon1",
+          "_name": "dragon3",
           "_type": "instance",
           "_id": "dragonModel"
         }
       }
     ],
-
     "shader": [
       {
         "diffuse": "0.5 0.5 0.5",
@@ -125,7 +126,6 @@
         "_type": "mesh"
       }
     ],
-
     "_bgColor": "0.0 0.0 0.0"
   }
 }
