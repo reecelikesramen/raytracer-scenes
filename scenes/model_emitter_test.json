@@ -117,7 +117,7 @@
 
     "instance": [
       {
-        "file": "objFiles/dragon.obj",
+        "file": "../models/dragon.obj",
         "shader": {
           "_ref": "blueMat"
         },

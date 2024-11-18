@@ -2,7 +2,7 @@
   "scene": {
     "sceneParameters": {
       "bgColor": "0.5 0.5 0.6",
-      "envMapPrefix": "images/reef_"
+      "envMapPrefix": "../textures/reef_"
     },
 
     "camera": [
@@ -117,12 +117,12 @@
 
     "texture": [
       {
-        "sourcefile": "images/textureMapCalibration.png",
+        "sourcefile": "../textures/textureMapCalibration.png",
         "_name": "calibrationTex",
         "_type": "image"
       },
       {
-        "sourcefile": "images/jupiter_2k.png",
+        "sourcefile": "../textures/jupiter_2k.png",
         "_name": "JupiterTex",
         "_type": "image"
       }
@@ -316,7 +316,7 @@
         "shader": {
           "_ref": "greenMat"
         },
-        "file": "objFiles/bunny.obj",
+        "file": "../models/bunny.obj",
         "_name": "bunnyModel",
         "_type": "mesh"
       },
@@ -324,7 +324,7 @@
         "shader": {
           "_ref": "redPlastic"
         },
-        "file": "objFiles/al.obj",
+        "file": "../models/al.obj",
         "_name": "AlModel",
         "_type": "mesh"
       }

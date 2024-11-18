@@ -21,7 +21,7 @@
   </light>
 
   <texture name="calibrationTex" type="image">
-    <sourcefile>images/textureMapCalibration.png</sourcefile>
+    <sourcefile>../textures/textureMapCalibration.png</sourcefile>
   </texture>
   <shader name="greyTextured" type="Lambertian">
     <diffuse tex="calibrationTex">1.0 1.0 1.0</diffuse>

@@ -25,12 +25,12 @@
 
     "texture": [
       {
-        "sourcefile": "images/earth_daymap_2k.png",
+        "sourcefile": "../textures/earth_daymap_2k.png",
         "_name": "EarthDiffuse",
         "_type": "image"
       },
       {
-        "sourcefile": "images/earth_specular_map_2k.png",
+        "sourcefile": "../textures/earth_specular_map_2k.png",
         "_name": "EarthSpecular",
         "_type": "image"
       }
