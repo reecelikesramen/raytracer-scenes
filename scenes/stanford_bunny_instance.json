@@ -1,0 +1,112 @@
+{
+  "scene": {
+    "camera": [
+      {
+        "position": [3, 3, 10],
+        "lookat_point": [-1, 0, -3],
+        "focalLength": 1.0,
+        "imagePlaneWidth": 0.5,
+        "_name": "main",
+        "_type": "perspective"
+      }
+    ],
+    "light": [
+      {
+        "_type": "point",
+        "position": [0, 10, 0],
+        "intensity": [0.8, 0.8, 0.8]
+      },
+      {
+        "_type": "ambient",
+        "intensity": [0.1, 0.1, 0.1]
+      }
+    ],
+    "shader": [
+      {
+        "diffuse": "0.8 0.8 0.8",
+        "specular": [1, 1, 1],
+        "shininess": 128,
+        "_name": "greyMat",
+        "_type": "BlinnPhong"
+      },
+      {
+        "diffuse": "1.0 0.0 0.0",
+        "specular": "0.6 0.6 0.6",
+        "phongExp": 64,
+        "_name": "reddishMat",
+        "_type": "BlinnPhong"
+      },
+      {
+        "diffuse": "0.0 1.0 0.0",
+        "specular": "0.6 0.6 0.6",
+        "phongExp": 64,
+        "_name": "green",
+        "_type": "BlinnPhong"
+      }
+    ],
+    "shape": [
+      {
+        "_name": "ground",
+        "_type": "box",
+        "_shader": "greyMat",
+        "minPt": [-50, -2, -50],
+        "maxPt": [50, -1.5, 50]
+      },
+      {
+        "_name": "sphere",
+        "_type": "sphere",
+        "_shader": "greyMat",
+        "center": [-1, 0, -3],
+        "radius": 0.5
+      },
+      {
+        "_name": "sphere2",
+        "_type": "sphere",
+        "_shader": "greyMat",
+        "center": [-1, 0.5, -3],
+        "radius": 0.5
+      },
+      {
+        "_name": "bunny1",
+        "_type": "instance",
+        "_id": "BunnyModel",
+        "_shader": "reddishMat",
+        "xform": [
+          {
+            "type": "translate",
+            "amount": [-2, 0, -5]
+          },
+          {
+            "type": "scale",
+            "amount": [1, 1, 2]
+          },
+          {
+            "type": "rotate",
+            "axis": "x",
+            "amount": 90
+          },
+          {
+            "type": "rotate",
+            "axis": "y",
+            "amount": 0
+          },
+          {
+            "type": "rotate",
+            "axis": "z",
+            "amount": 90
+          }
+        ]
+      }
+    ],
+    "instance": [
+      {
+        "file": "../models/bunny.obj",
+        "shader": {
+          "_ref": "greyMat"
+        },
+        "_name": "BunnyModel",
+        "_type": "mesh"
+      }
+    ]
+  }
+}

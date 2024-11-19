@@ -1,0 +1,100 @@
+{
+  "scene": {
+    "scene_parameters": {
+      "camera": null
+    },
+    "cameras": [
+      {
+        "_name": "main",
+        "_type": "Perspective",
+        "position": [
+          -8.0,
+          4.0,
+          4.0
+        ],
+        "view_dir": [
+          2.0,
+          -1.0,
+          -1.0
+        ],
+        "focal_length": 1.0,
+        "image_plane_width": null
+      }
+    ],
+    "lights": [
+      {
+        "_type": "point",
+        "position": [
+          0.0,
+          4.0,
+          4.0
+        ],
+        "intensity": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "shaders": [
+      {
+        "_name": "blue",
+        "_type": "Lambertian",
+        "diffuse": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "shapes": [
+      {
+        "_name": "box1",
+        "_shader": "blue",
+        "_type": "box",
+        "min": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "_name": "box2",
+        "_shader": "blue",
+        "_type": "box",
+        "min": [
+          -1.5,
+          -0.5,
+          -1.5
+        ],
+        "max": [
+          -0.5,
+          0.5,
+          -0.5
+        ]
+      },
+      {
+        "_name": "box3",
+        "_shader": "blue",
+        "_type": "box",
+        "min": [
+          0.5,
+          -0.5,
+          0.5
+        ],
+        "max": [
+          1.5,
+          0.5,
+          1.5
+        ]
+      }
+    ],
+    "textures": [],
+    "instances": []
+  }
+}

@@ -12,7 +12,7 @@
     ],
     "light": [
       {
-        "position": "6.0 6.0 8.0",
+        "position": "0 5 0",
         "intensity": "1.0 1.0 1.0",
         "_type": "point"
       }
@@ -24,13 +24,20 @@
         "phongExp": 16.0,
         "_name": "redMat",
         "_type": "BlinnPhong"
+      },
+      {
+        "diffuse": "1.0 0.0 0.0",
+        "specular": "0.6 0.6 0.6",
+        "phongExp": 64,
+        "_name": "reddishMat",
+        "_type": "BlinnPhong"
       }
     ],
     "shape": [
       {
         "file": "../models/bunny.obj",
         "shader": {
-          "_ref": "redMat"
+          "_ref": "reddishMat"
         },
         "_name": "BunnyModel",
         "_type": "mesh"
